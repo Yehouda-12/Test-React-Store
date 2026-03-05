@@ -10,7 +10,7 @@ const MovieList = () => {
     const { movies, fetchMovies, isLoading, searchQuery } = useMovieStore();
 
 
-    const debouncedSearch = useDebounce(searchQuery, 500);
+    const debouncedSearch = useDebounce(searchQuery, 1000);
 
     useEffect(() => {
         fetchMovies();
@@ -28,7 +28,7 @@ const MovieList = () => {
             <div className="movie-grid">
                 {filteredMovies.map((movie) => (
                     <div key={movie.imdbID} className="movie-card">
-                        <img src={movie.Poster} alt={movie.Title} className="card-img" />
+                        <img src={movie?.Poster} alt={movie.Title} className="card-img" />
                         <div className="card-body">
                             <h3 className="movie-title">{movie.Title}</h3>
 
