@@ -37,6 +37,7 @@ h1, h2, h3 {
 
 .movie-meta-row{
   display: flex;
+  justify-content: space-between;
 
 }
 .meta-label{
@@ -141,6 +142,7 @@ h1, h2, h3 {
 button{
   background-color: yellow;
   border-radius: 12px;
+  margin-top: 15px;
 }
 
 button:hover{
