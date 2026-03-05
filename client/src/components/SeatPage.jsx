@@ -20,13 +20,13 @@ const SeatPage = () => {
         <div className="header-top">
           <h2>Choose your seats</h2>
           <div className="status-indicators">
-             <span className="indicator"><span className="dot red"></span> Available</span>
-             <span className="indicator"><span className="dot green"></span> Taken</span>
+             <span ><span className="dot red"></span> Available</span>
+             <span ><span className="dot green"></span> Taken</span>
              <button onClick={() => navigate('/')} className="btn-back">Back</button>
           </div>
         </div>
         <p className="movie-subtitle">Movie details</p>
-        <p className="id-badge">Movie ID: {imdbID}</p>
+        <p >Movie ID: {imdbID}</p>
       </div>
 
       <div className="seats-card">

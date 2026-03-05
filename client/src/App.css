@@ -112,9 +112,34 @@ h1, h2, h3 {
   font-size: 12px;
   margin-bottom: 10px;
 }
+.status-indicators{
+  display: flex;
+  justify-content: space-around;
+
+}
+.dot{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: #00ff00;
+}
+.status-indicators span{
+  font-size: 13px;
+  color:black;
+  display: flex;
+  align-items: center;
+}
 
 .summary-box {
-  background-color: #ffffcc;
+  background-color: #363e92;
   padding: 10px;
   border: 1px dashed #000;
   margin-top: 15px;
